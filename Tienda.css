@@ -1,0 +1,264 @@
+/* Globales */
+
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+margin: 0 auto;
+    max-width: 1200px;
+    font-family: 'Lato';
+    color: #333;
+}
+
+.icon-cart{
+    width: 40px;
+    height: 40px;
+    stroke: #000;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*Header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 30px 0;
+    font-family: 'Roboto' , sans-serif;
+}
+
+
+.container-icon{
+    
+}
+
+
+.count-products{
+position: absolute;
+top: 55%;
+right: 0;
+
+background-color: #000;
+color: #fff;
+width: 25px;
+height: 25px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+
+}
+
+.container-cart-products{
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+
+}
+
+.cart-product{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+
+.titulo-producto-carrito
+
+.icon-close{
+    width: 25px;
+    height: 25px;
+}
+
+
+
+/* Main */
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item{
+    border-radius: 10px;
+    
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.20);
+}
+
+
+/*para dejar los productos de forma cuadrada,si quiero dejarlos de forma cuadrada utilizamos width:100%,height:300px,object-fit:cover,y listo ahi tienen el codigo para dejar cuadrada la seccion de plantas*/
+.item img{
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+
+.item:hover img{
+transform: scale(1.1);
+}
+
+
+.info-product{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-product button{
+    border: none;
+    background: none;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+.info-product a{
+    color: rgb(2, 194, 2); /* Cambia el color de las letras del enlace a verde */
+}
+
+
+
+a {
+    transition: all 0.3s ease; /* Aplica una transición suave de 0.3 segundos a todas las propiedades CSS */
+}  
+a:hover {
+    color: blue; /* Cambia el color del enlace a azul cuando el cursor se sitúa sobre él */
+    transform: scale(1.1); /* Aplica un efecto de escala al enlace al pasar el cursor sobre él */
+}
+
+
+
+
+#heroo{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 120vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("I");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+header .logo{
+    margin: 0%;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: green;
+    font-size: 1.6em;
+}
+
+
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: #0a4708;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #fff;
+    margin-bottom: 1px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #185e03;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: green;
+}
+.pie-pagina .grupo-2{
+    background-color: #034b03;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}

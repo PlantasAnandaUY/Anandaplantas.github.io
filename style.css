@@ -1,0 +1,258 @@
+.Imagenesdelaweb{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.imgen{
+
+width: 350px;
+
+margin: 0 140px;
+}
+
+*{
+
+    box-sizing: border-box;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+li{font-size: 1.25em;}
+
+
+body{
+    font-family: "Roboto",sans-serif;
+margin: 0;  
+}
+
+
+
+button{
+font-size: 1.5em;
+font-weight: bold;
+padding: 10px 30px;
+border-radius: 15px;
+border: 2px solid rgba(0,0,0,0.5);
+box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+color: white;
+background-color: green;
+}
+
+button:hover{
+    background-color: rgb(14, 177, 14);
+}
+
+.container1{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color: green;}
+
+
+header{
+    background-color: rgb(245,245,245);
+}
+
+header .logo{
+    margin: 0%;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: green;
+    font-size: 1.6em;
+}
+
+header .container1{
+    display: flex;
+    flex-direction: column;
+align-items: center;
+}
+header nav{
+display: flex;
+flex-direction: column;
+text-align: center;
+padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: green
+}
+
+#heroo{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("erol-ahmed-IHL-Jbawvvo-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+    
+
+
+
+#hero h1{
+    color: white;
+}
+
+
+#somos-ANANDA .container{
+    text-align: center;
+    padding: 200px 12px;
+    background-image: linear-gradient(
+    ) url("");
+    
+}
+
+
+@media (min-width: 120px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+
+
+
+    header .container1{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0%;
+        padding-right: 20px;
+    }
+}
+
+
+#somos-ANANDA .container{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+
+#somos-ANANDA .texto{
+    width: 50%;
+    text-align: initial;
+    padding: 0px 30px;
+}
+
+#somos-ANANDA .img-container{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("buda\ png7.png");
+    background-size: cover;
+    background-position: center center;
+    height: 700px;
+    width: 700px;
+}
+
+
+header .container220{
+    text-align: center;
+}
+
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: #0a4708;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #fff;
+    margin-bottom: 1px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #185e03;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: green;
+}
+.pie-pagina .grupo-2{
+    background-color: #034b03;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+.containerananda a{
+    color: rgb(0, 255, 0); /* Cambia el color de las letras del enlace a verde */
+}
+
